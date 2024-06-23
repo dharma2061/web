@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+ .container {
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+}
+
+
+/* Container */
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/* Items */
+
+.hero {
+  flex: 1 0 40%;
+  height: 400px;
+  background-color: #D5C9E2;
+}
+
+.main-content {
+  flex: 1 0 60%;
+  height: 600px;
+  background-color: #F5C546;
+}
+
+.sidebar {
+  height: 500px;
+  flex: 1 0 40%;
+  background-color: #A0C263;
+  margin-top: -200px;
+}
+
+.extra-content {
+  flex: 1 0 60%;
+  background-color: #898989;
+  height: 300px;
+}
+
+</style>
+<body>
+    <div class="container">
+        <section class="main">
+            <div class="hero">
+                Hero
+            </div>
+            <div class="main-content">
+                Main Content
+            </div>
+            <div class="sidebar">
+                Sidebar
+            </div>
+            <div class="extra-content">
+                Extra content
+            </div>
+        </section>
+    </div>
+</body>
+</html>

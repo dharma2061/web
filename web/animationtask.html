@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: blueviolet;
+            animation-name: colorchange;
+            animation-iteration-count: infinite;
+            animation-duration: 3s;
+            position: relative;
+        }
+        @keyframes colorchange{
+            0%{
+                top:0;
+                left:0;
+                background-color: aquamarine;
+            }
+            25%{
+                top:0px;
+                background-color: aqua;
+                left: 600px;
+            }
+            50%{
+                top:400px;
+                background-color: red;
+                left:600px;
+            }
+            75%{
+                top:400px;
+                background-color: green;
+                left:0
+            }
+            100%{
+                top:0;
+                left:0;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
